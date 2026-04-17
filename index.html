@@ -510,7 +510,7 @@
     // with the fetch call in the comment below.
 
     // NETLIFY FETCH (uncomment when deployed):
-    /*
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -526,10 +526,7 @@
       errorEl.textContent = 'Something went wrong — please try again.';
       errorEl.style.display = 'block';
     });
-    */
-
-    // SIMULATION (remove when using real form handler):
-    setTimeout(showSuccess, 900);
+  
 
     function showSuccess() {
       formRow.style.display = 'none';
