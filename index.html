@@ -509,8 +509,6 @@
     // immediately. When you deploy to Netlify, replace the setTimeout
     // with the fetch call in the comment below.
 
-    // NETLIFY FETCH (uncomment when deployed):
-
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -526,7 +524,6 @@
       errorEl.textContent = 'Something went wrong — please try again.';
       errorEl.style.display = 'block';
     });
-  
 
     function showSuccess() {
       formRow.style.display = 'none';
@@ -542,10 +539,13 @@
   });
 </script>
 
+<!-- NETLIFY FORM DETECTION (hidden, required for Netlify to register the form) -->
+<!-- Uncomment this when deploying to Netlify: -->
+<!--
 <form name="interest" data-netlify="true" hidden>
   <input type="email" name="email">
 </form>
-
+-->
 
 </body>
 </html>
